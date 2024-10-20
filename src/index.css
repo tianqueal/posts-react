@@ -1,0 +1,75 @@
+:root {
+  @media (prefers-color-scheme: dark) {
+    --primary-color: rgb(30, 62, 98);
+    --hover-primary-color: rgb(22, 45, 72);
+    --on-primary-color: rgb(255, 255, 255);
+
+    --secondary-color: rgb(255, 101, 0);
+    --hover-secondary-color: rgb(227, 91, 1);
+    --on-secondary-color: rgb(255, 255, 255);
+
+    --error-color: rgb(255, 32, 78);
+    --hover-error-color: rgb(201, 23, 58);
+    --on-error-color: rgb(255, 255, 255);
+
+    --background-color: rgb(11, 25, 44);
+    --on-background-color: rgb(255, 255, 255);
+
+    --surface-color: rgb(0, 0, 0);
+    --hover-surface-color: rgb(20, 20, 20);
+    --on-surface-color: rgb(255, 255, 255);
+  }
+
+  @media (prefers-color-scheme: light) {
+    --primary-color: rgb(70, 130, 180);
+    --hover-primary-color: rgb(59, 99, 139);
+    --on-primary-color: rgb(255, 255, 255);
+
+    --secondary-color: rgb(212, 136, 85);
+    --hover-secondary-color: rgb(189, 135, 99);
+    --on-secondary-color: rgb(255, 255, 255);
+
+    --error-color: rgb(214, 105, 119);
+    --hover-error-color: rgb(181, 90, 102);
+    --on-error-color: rgb(255, 255, 255);
+
+    --background-color: rgb(245, 245, 245);
+    --on-background-color: rgb(11, 25, 44);
+
+    --surface-color: rgb(255, 255, 255);
+    --hover-surface-color: rgb(240, 240, 240);
+    --on-surface-color: rgb(0, 0, 0);
+  }
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: var(--on-background-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

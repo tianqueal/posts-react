@@ -1,0 +1,34 @@
+section.create-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  form.create-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    article {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      label {
+        font-weight: 600;
+      }
+
+      input {
+        font-size: 1rem;
+        padding: 10px;
+        border: 1px solid var(--on-surface-color);
+        background-color: var(--surface-color);
+        color: var(--on-surface-color);
+        border-radius: 5px;
+      }
+    }
+  }
+}

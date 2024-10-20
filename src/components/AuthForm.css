@@ -1,0 +1,25 @@
+form.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    input {
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid var(--on-surface-color);
+      background-color: var(--surface-color);
+      color: var(--on-surface-color);
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+}

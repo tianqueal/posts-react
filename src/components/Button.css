@@ -1,0 +1,73 @@
+button.my-button {
+  width: max-content;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--on-suface-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.primary {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+
+    &:hover {
+      background-color: var(--hover-primary-color);
+    }
+
+    &:disabled {
+      background-color: var(--hover-primary-color);
+      color: var(--on-primary-color);
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    background-color: var(--secondary-color);
+    color: var(--on-secondary-color);
+
+    &:hover {
+      background-color: var(--hover-secondary-color);
+    }
+
+    &:disabled {
+      background-color: var(--hover-secondary-color);
+      color: var(--on-secondary-color);
+      cursor: not-allowed;
+    }
+  }
+
+  &.error {
+    background-color: var(--error-color);
+    color: var(--on-error-color);
+
+    &:hover {
+      background-color: var(--hover-error-color);
+    }
+
+    &:disabled {
+      background-color: var(--hover-error-color);
+      color: var(--on-error-color);
+      cursor: not-allowed;
+    }
+  }
+
+  &.outline {
+    border: 1px solid var(--on-surface-color);
+    color: var(--on-surface-color);
+
+    &:hover {
+      background-color: var(--on-surface-color);
+      color: var(--surface-color);
+    }
+
+    &:disabled {
+      background-color: var(--on-surface-color);
+      color: var(--surface-color);
+      cursor: not-allowed;
+    }
+  }
+}
